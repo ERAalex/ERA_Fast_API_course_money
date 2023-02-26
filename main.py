@@ -1,10 +1,5 @@
 from fastapi import FastAPI
 
-import configparser
-config = configparser.ConfigParser()
-config.read('config/config.ini', encoding='utf-8-sig')
-
-
 app = FastAPI(
     title='Testing Server Espinosa'
 )
