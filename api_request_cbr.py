@@ -15,7 +15,6 @@ class Api_coin():
     def parser_coins(result_of_parse, name_coin):
         data_coins = []
 
-
         for item, value in result_of_parse.items():
             for item1, value1 in value.items():
                 data_coins = value1
@@ -59,7 +58,7 @@ class Api_coin():
         return result_diccionary
 
 
-see_coin = Api_coin('Евро', '12.07.2015')
+see_coin = Api_coin('GBP', '12.07.2015')
 
-# see_coin.check_coin_today()
+# print(see_coin.check_coin_today())
 # see_coin.check_coin_some_date()
