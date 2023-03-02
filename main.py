@@ -12,6 +12,7 @@ app = FastAPI(
     title='Testing Server Espinosa'
 )
 
+# start local server on Fast Api - uvicorn main:app --reload
 
 # название функции будет отображено в описании документации. Подбирай название
 @app.get('/')
