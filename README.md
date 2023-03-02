@@ -1,8 +1,8 @@
 
 #### E.R.A. - Espinosa Rozov Alexander - python developer.
-# Educational project - API Money - recive current costs of Rubl
+# Project - API Money - recive current costs of Rubl
 
-<center><img src="https://github.com/ERAalex/ERA_Fast_API_course_money/blob/main/api_money_im.webp"></center>
+<img src="https://github.com/ERAalex/ERA_Fast_API_course_money/blob/main/api_money_im.webp">
 <p>
   <a href="https://www.linkedin.com/in/alexander-espinosa-rozov-b3b270121/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"></a>
 </p>
@@ -16,20 +16,19 @@
       <img src="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-/blob/main/website_icons.jpg" >
     </a>
 
-This application shows us the possibility of VUE JS interacting with our Django server via the API. 
-A system has been prepared to check the weather. The main idea: <br>
+This application is a Fast Api server with the ability to provide the exchange rate of coins on any date. The main idea: <br>
 
-1. Django API Server.<br>
-- use API of https://openweathermap.org/api to get new information abot weather of some city.<br>
-- save data in database.<br>
-- Django REST Framework help us to give information to our Vue JS app.<br>
+1. FAST API Server.<br>
+- use API of https://cbr.ru/development/SXML/ to get new information about exchange rate of coins.<br>
+- Check information in database - Mongo DB.<br>
+- Save new information on Mongo Db database.<br>
 
 2. Vue JS.<br>
-- the user can write the name of city and get information from our Django Api Server.<br><br>
+- the user can write the name of coin and get information from our Fast Api Server.<br><br>
 
 
-Interesting points about API of openweather:<br>
-- First we need to get parameters such as lon and lat, and only then we search for temperature of a city using them. Therefore, I have prepared a function that makes 2 API requests to search for parameters (lon / lat) of city on request and to search for the weather of the area.<br>
+Interesting points about API of SBR:<br>
+- All information from https://cbr.ru/development/SXML/ we recive not in JSON but as XML so we need to use - import xmltodict as xmltodict <br>
 - We get a JSON response with data in Kelvin, so we need to translate it to Celsius. <br><br>
 
 An interesting problem with requests from VUE JS - Axios to our Django LOCALHOST server. Returns an error when making requests to the local server:<br>
