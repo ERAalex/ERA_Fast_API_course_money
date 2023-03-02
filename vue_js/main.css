@@ -1,7 +1,13 @@
 
+.box_main{
+    width: 900px;
+    height: 900px;
+}
 
 .box_fon{
-    background-image: url("fon_hot.jpeg");
+    width: 700px;
+    height: 700px;
+    background-image: url("money_api_im.webp");
     background-size: contain;
     background-repeat: no-repeat;
     
