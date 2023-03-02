@@ -47,8 +47,7 @@ Main:<br/>
 [![SkillIcons](https://skillicons.dev/icons?i=vue)](https://skillicons.dev) VUE JS <br/>
 
 DATABASES:<br/>
-[![SkillIcons](https://skillicons.dev/icons?i=mysql)](https://skillicons.dev) MySQL <br/>
-[![SkillIcons](https://skillicons.dev/icons?i=postgres)](https://skillicons.dev) optional - PostgreSQL <br/>
+[![SkillIcons](https://skillicons.dev/icons?i=mongo)](https://skillicons.dev) MySQL <br/>
 
 Additional tech:<br/>
 [![SkillIcons](https://skillicons.dev/icons?i=git)](https://skillicons.dev) GIT <br/>
