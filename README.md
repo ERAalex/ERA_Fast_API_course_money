@@ -35,28 +35,7 @@ Intresting points about Mongo db to JSON:<br>
 - When we try to pass Mongo Db information as JSON response in Fast API we can recieve problem with '_ id' because it is not just field like int or str, so Fast Api can't serialize this field, the opcion is not use this field, just skip it like: <br>
 find_item = collection_name.find_one({'date': f'{date}'}, {'_id': 0}).
 
-The solution to this problem:<br>
-- https://stackoverflow.com/questions/22476273/no-access-control-allow-origin-header-is-present-on-the-requested-resource-i<br>
 
-The main idea is:<br>
-pip install django-cors-headers
-
-After installing it, you have to make some edits to your django settings.py<br>
- 
-INSTALLED_APPS = (
-    ...
-    'corsheaders',
-    ...
-)
-
-MIDDLEWARE_CLASSES = (
-    ...
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    ...
-)
-
-CORS_ORIGIN_ALLOW_ALL = True
 
 <br>
 
