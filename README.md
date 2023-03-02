@@ -2,7 +2,7 @@
 #### E.R.A. - Espinosa Rozov Alexander - python developer.
 # Educational project - API Money - recive current costs of Rubl
 
-<img src="https://github.com/ERAalex/ERA_Weather_Api_app/blob/main/weather_img.jpeg">
+<img src="https://github.com/ERAalex/ERA_Fast_API_course_money/blob/main/api_money_im.webp">
 <p>
   <a href="https://www.linkedin.com/in/alexander-espinosa-rozov-b3b270121/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"></a>
 </p>
