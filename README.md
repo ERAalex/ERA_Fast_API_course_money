@@ -29,10 +29,11 @@ This application is a Fast Api server with the ability to provide the exchange r
 
 Interesting points about API of SBR:<br>
 - All information from https://cbr.ru/development/SXML/ we recive not in JSON but as XML so we need to use - import xmltodict as xmltodict <br>
-- We get a JSON response with data in Kelvin, so we need to translate it to Celsius. <br><br>
+<br>
 
-An interesting problem with requests from VUE JS - Axios to our Django LOCALHOST server. Returns an error when making requests to the local server:<br>
-- from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+Intresting points about Mongo db to JSON:<br>
+- When we try to pass Mongo Db information as JSON response in Fast API we can recieve problem with '_ id' because it is not just field like int or str, so Fast Api can't serialize this field, the opcion is not use this field, just skip it like: <br>
+find_item = collection_name.find_one({'date': f'{date}'}, {'_id': 0}).
 
 The solution to this problem:<br>
 - https://stackoverflow.com/questions/22476273/no-access-control-allow-origin-header-is-present-on-the-requested-resource-i<br>
