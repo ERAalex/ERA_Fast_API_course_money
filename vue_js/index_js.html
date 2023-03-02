@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <!-- подключаем версию для разработки -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <!-- подключаем библиотеку для асинхронного запроса -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="main.css">
+
+
+    </head>
+
+    <body>
+
+        <div class="">
+            <div id="app" class="box_fon">
+                    <!-- чтобы переменная cityCss сразу перезаписывала переменную, которую дальше будем вставлять в API ссылку нам надо использовать приписку this.cityCSS - this!!! -->
+                <input type="text" v-on:input="this.coinCSS = $event.target.value" v-model="coinCSS">
+                <p>Money: {{coinCSS}}</p>
+                API Coin Change <br><br>
+                
+                <!-- выводим каждый элемент из переменной temp_citie куда сохранены данные json, через цикл v-for -->
+                <div v-for="(value, key) in coin_json">
+                    <div>{{key}}: {{value}}</div>
+                </div>
+                <br>
+
+                <!-- кнопка при нажатии запускаем функцию getTemperature, которая описана ниже -->
+                <div>
+                    <button type="button" @click="getChange">посмотреть курс</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+        <script type="text/javascript">
+            new Vue({
+                el: '#app',
+                data: {
+                    message: '',
+                    coinCSS: '',
+                    coin_json: '',
+                    url: {
+                        api_url: 'http://127.0.0.1:8000/coin/'
+                    }
+
+                },
+                created: function(){
+
+
+                },
+
+                methods: {
+                    getChange(){
+                        axios.get(this.url.api_url + coinCSS).then((response) => {
+                            console.log(response.data);
+                            this.coin_json = response.data;
+                        });
+                    }
+
+                }
+
+
+            })
+        </script>
+    
+
+    </body>
+
+
+
+</html>

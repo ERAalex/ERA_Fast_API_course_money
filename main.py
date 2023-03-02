@@ -8,9 +8,25 @@ from fastapi.encoders import jsonable_encoder
 import datetime
 date = datetime.datetime.now()
 
+from fastapi.middleware.cors import CORSMiddleware
+
+
+
 app = FastAPI(
     title='Testing Server Espinosa'
 )
+
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 # start local server on Fast Api - uvicorn main:app --reload
 
