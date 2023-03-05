@@ -60,7 +60,7 @@ app.add_middleware(<br>
 
 ## Technologies
 Main:<br/>
-[![SkillIcons](https://skillicons.dev/icons?i=python)](https://skillicons.dev) PYTHON - REST FRAMEWORK <br/>
+[![SkillIcons](https://skillicons.dev/icons?i=fast)](https://skillicons.dev) FAST API <br/>
 
 Main:<br/>
 [![SkillIcons](https://skillicons.dev/icons?i=vue)](https://skillicons.dev) VUE JS <br/>
