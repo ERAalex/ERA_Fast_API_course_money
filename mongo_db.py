@@ -10,7 +10,9 @@ config.read('config/config.ini', encoding='utf-8-sig')
 
 class Mongo_db_connect():
     def __init__(self):
-        self.CONNECTION_STRING = config.get('database', 'connecting_str')
+        # self.CONNECTION_STRING = config.get('database', 'connecting_str')
+        # self.CONNECTION_STRING = 'mongodb://127.0.0.1:27017'
+        self.CONNECTION_STRING = 'mongodb://root:nazca007@mongo:27017/'
         self.client = MongoClient(self.CONNECTION_STRING)
         self.dbname = self.client['API_course_money']
         self.collection_name = self.dbname['usd_rubl']

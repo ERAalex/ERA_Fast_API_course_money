@@ -1,0 +1,30 @@
+version: '3.1'
+
+services:
+  src:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rest_api_conteiner
+    tty: true
+    command: uvicorn main:app --host 0.0.0.0
+    volumes:
+      - .:/src
+    environment:
+      MONGODB_DATABASE: API_course_money
+      MONGODB_USERNAME: root
+      MONGODB_PASSWORD: nazca007
+      MONGODB_HOSTNAME: mongodb
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: nazca007
+    ports:
+      - 64000:27017

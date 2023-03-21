@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI
 from starlette.responses import JSONResponse
 import json
@@ -64,3 +65,9 @@ def get_coin_course_date(coin: str, date: str):
     result_json = jsonable_encoder(result)
 
     return result_json
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+
+
