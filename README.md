@@ -23,6 +23,8 @@ This application is a Fast Api server with the ability to provide the exchange r
 - Check information in database - Mongo DB.<br>
 - Save new information on Mongo Db database.<br>
 
+you can make a request  http://127.0.0.1:8000/coin/GBP   where GBP - is a coin of England
+
 2. Vue JS.<br>
 - the user can write the name of coin and get information from our Fast Api Server.<br><br>
 
