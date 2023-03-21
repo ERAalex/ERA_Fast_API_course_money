@@ -27,8 +27,8 @@ This application is a Fast Api server with the ability to provide the exchange r
 - the user can write the name of coin and get information from our Fast Api Server.<br><br>
 
 
-3. Ready Dockerfile and Docker-compose.yml to RUN Containers. Just type the command: docker-compose up
-Container for app + Container for MongoDB
+3. Ready Dockerfile and Docker-compose.yml to RUN Containers.<br> Just type the command: docker-compose up
+Container for app + Container for MongoDB <br><br>
 
 
 Interesting points about API of SBR:<br>
