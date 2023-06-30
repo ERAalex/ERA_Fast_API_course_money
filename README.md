@@ -13,11 +13,11 @@
 ## About the project.
 
   <a href="#" target="_blank" rel="noreferrer nofollow">
-      <img src="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-/blob/main/website_icons.jpg" width="400" height="300" >
+      <img src="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-/blob/main/website_icons.jpg">
     </a>
 
   <a href="#" target="_blank" rel="noreferrer nofollow">
-      <img src="https://github.com/ERAalex/ERA_Fast_API_course_money/blob/main/docker_img.png" >
+      <img src="https://github.com/ERAalex/ERA_Fast_API_course_money/blob/main/docker_img.png" width="450" height="350">
     </a>
     
 This application is a Fast Api server with the ability to provide the exchange rate of coins on any date. The main idea: <br>
