@@ -13,7 +13,7 @@
 ## About the project.
 
   <a href="#" target="_blank" rel="noreferrer nofollow">
-      <img src="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-/blob/main/website_icons.jpg" >
+      <img src="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-/blob/main/website_icons.jpg" width="400" height="300" >
     </a>
 
   <a href="#" target="_blank" rel="noreferrer nofollow">
